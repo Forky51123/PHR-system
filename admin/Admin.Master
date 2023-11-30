@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="FYP.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #007bff; /* Blue color for the top navigation */
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a.active {
+            background-color: #0056b3; /* Darker blue for the active link */
+        }
+
+        .topnav a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Add additional styling here as needed */
+        /* Adjust your content's styles accordingly */
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="topnav">
+                <a class="active" href="adminDashboard.aspx">Dashboard</a>
+                <a href="#home">Home</a>
+                <a href="adminLogin.aspx">Sign out</a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+       
+    </form>
+</body>
+</html>
